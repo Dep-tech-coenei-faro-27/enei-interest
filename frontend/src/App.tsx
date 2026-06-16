@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div>Frontend ENEI Faro </div>
+      <div className='titulo'>Frontend ENEI Faro </div>
       <NameForm />
     </>
   )

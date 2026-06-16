@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './NameForm.css'
 
 export default function NameForm () {
 
