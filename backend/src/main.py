@@ -21,7 +21,7 @@ def create_submission(submission_dto: SubmissionDTO, session: SessionDep) -> Sub
     submission = Submissions.model_validate(obj = submission_dto)
 
     if result:
-        raise HTTPException(status_code=400, detail="Duplicate submission!")
+        raise HTTPException(status_code=409, detail="Duplicate submission!")
     
     session.add(submission)
     session.commit()

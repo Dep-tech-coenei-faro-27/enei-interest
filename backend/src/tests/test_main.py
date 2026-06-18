@@ -51,7 +51,7 @@ def test_create_submission_duplicate(client: TestClient):
         "/api/submissions", json={"email": "emailTeste@ualg.pt"}
     )
     
-    assert response2.status_code == 400
+    assert response2.status_code == 409
 
 
     assert response2.json()["detail"] == "Duplicate submission!"
