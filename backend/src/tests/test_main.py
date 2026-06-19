@@ -32,7 +32,7 @@ def client_fixture(session: Session):
 
 def test_create_submission_success(client: TestClient):
     response = client.post(
-        "/api/submissions", json={"email": "emailTeste@ualg.pt"}
+        "/api/submissions", json={"email": "emailTeste@ualg.pt", "name" : "Utilizador de teste"}
     )
     data = response.json()
 
@@ -46,13 +46,13 @@ def test_create_submission_success(client: TestClient):
 
 def test_create_submission_duplicate(client: TestClient):  
     response1 = client.post(
-        "/api/submissions", json={"email": "emailTeste@ualg.pt"}
+        "/api/submissions", json={"email": "emailTeste@ualg.pt",  "name" : "Utilizador de teste"}
     )
     
     assert response1.status_code == 201
 
     response2 = client.post(
-        "/api/submissions", json={"email": "emailTeste@ualg.pt"}
+        "/api/submissions", json={"email": "emailTeste@ualg.pt",  "name" : "Utilizador de segundo teste"}
     )
     
     assert response2.status_code == 409
@@ -70,7 +70,7 @@ def test_create_submission_missing_fields(client: TestClient):
 
 def test_create_submission_extra_fields(client: TestClient):  
     response = client.post(
-        "/api/submissions", json={"id": 10001243, "email": "emailTeste@ualg.pt", "created_at": "1231231"}
+        "/api/submissions", json={"id": 10001243, "email": "emailTeste@ualg.pt", "name" : "Utilizador de teste", "created_at": "1231231"}
     )
 
     assert response.status_code == 422
@@ -78,13 +78,13 @@ def test_create_submission_extra_fields(client: TestClient):
 
 def test_quantity_submission_success(client: TestClient):
     response = client.post(
-        "/api/submissions", json={"email": "emailTeste@ualg.pt"}
+        "/api/submissions", json={"email": "emailTeste@ualg.pt",  "name" : "Utilizador de teste"}
     )
     response = client.post(
-        "/api/submissions", json={"email": "email2Teste@ualg.pt"}
+        "/api/submissions", json={"email": "email2Teste@ualg.pt",  "name" : "Utilizador de teste"}
     )
     response = client.post(
-        "/api/submissions", json={"email": "email3Teste@ualg.pt"}
+        "/api/submissions", json={"email": "email3Teste@ualg.pt",  "name" : "Utilizador de teste"}
     ) 
 
     response = client.get(

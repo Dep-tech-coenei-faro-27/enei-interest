@@ -6,7 +6,7 @@ from utils.time import get_current_time
 
 class SubmissionBase(SQLModel):
     email: EmailStr = Field(unique=True, index=True, nullable=False)
-    #name: str = Field(nullable=False)
+    name: str = Field(nullable=False)
     model_config = ConfigDict(extra="forbid")
 
 class Submissions(SubmissionBase, table=True):
