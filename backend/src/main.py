@@ -16,13 +16,13 @@ app = FastAPI(lifespan=lifespan)
 
 @app.post("/api/submissions", status_code=status.HTTP_201_CREATED)
 def create_submission(submission_dto: SubmissionDTO, session: SessionDep) -> Submissions:
-    result = session.exec(select(Submissions).where(Submissions.email == submission_dto.email)).all()
-
-    submission = Submissions.model_validate(obj = submission_dto)
+    result = session.exec(select(Submissions).where(Submissions.email == submission_dto.email)).first()
 
     if result:
         raise HTTPException(status_code=409, detail="Duplicate submission!")
-    
+
+    submission = Submissions.model_validate(obj = submission_dto)
+
     session.add(submission)
     session.commit()
     session.refresh(submission)

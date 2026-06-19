@@ -27,14 +27,18 @@ def client_fixture(session: Session):
 
     client = TestClient(app)  
     yield client  
-    app.dependency_overrides.clear()  
+    app.dependency_overrides.clear()
 
 
-def test_create_submission_success(client: TestClient):  
+def test_create_submission_success(client: TestClient):
     response = client.post(
         "/api/submissions", json={"email": "emailTeste@ualg.pt"}
     )
     data = response.json()
+
+    print("\n--- ERRO DO FASTAPI ---")
+    print(data) # Isto vai revelar o motivo do erro 422!
+    print("-----------------------\n")
 
     assert response.status_code == 201
     assert data["id"] == 1

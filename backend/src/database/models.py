@@ -2,11 +2,11 @@ import datetime
 import sqlalchemy as sa
 from pydantic import ConfigDict, EmailStr
 from sqlmodel import Field, SQLModel
-from pydantic import EmailStr
 from utils.time import get_current_time
 
 class SubmissionBase(SQLModel):
     email: EmailStr = Field(unique=True, index=True, nullable=False)
+    #name: str = Field(nullable=False)
     model_config = ConfigDict(extra="forbid")
 
 class Submissions(SubmissionBase, table=True):

@@ -1,17 +1,25 @@
 from typing import Annotated
-import os
-from dotenv import load_dotenv
 from fastapi import Depends
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from sqlmodel import SQLModel, Session, create_engine
 
-load_dotenv()
+class Settings(BaseSettings):
+    DB_USER: str
+    DB_PASSWORD: str
+    DB_HOST: str
+    DB_PORT: int = 5432
+    DB_NAME: str
 
-DATABASE_URL = (
-    f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}"
-    f"@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
-)
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
-engine = create_engine(DATABASE_URL, echo=True)
+    @property
+    def database_url(self) -> str:
+        return f"postgresql://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
+
+
+settings = Settings()
+
+engine = create_engine(settings.database_url, echo=True)
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
