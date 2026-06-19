@@ -8,6 +8,7 @@
 ```json
 {
   "name": "string"
+  "email": "string"
 }
 ```
 
@@ -26,7 +27,7 @@
 ```json
 {
   "status": "error",
-  "message": "Name is required"
+  "message": "Name and Email required"
 }
 ```
 ### 3. Server Error (500 Internal Server Error)
