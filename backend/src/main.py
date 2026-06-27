@@ -6,6 +6,7 @@ from fastapi import FastAPI, HTTPException
 from database.models import Submissions
 from utils.dto import SubmissionDTO, SubmissionCountDTO
 from fastapi import status
+from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -14,6 +15,17 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+origins = [
+    "http://localhost:5173",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 @app.post("/api/submissions", status_code=status.HTTP_201_CREATED)
 def create_submission(submission_dto: SubmissionDTO, session: SessionDep) -> Submissions:
     result = session.exec(select(Submissions).where(Submissions.email == submission_dto.email)).first()
