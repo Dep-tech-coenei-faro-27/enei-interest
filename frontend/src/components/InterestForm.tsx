@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './InterestForm.css'
-import { envHostBackend } from '../shared/env';
+import { apiBaseUrl } from '../shared/env';
 
 export default function InterestForm () {
 
@@ -21,19 +21,20 @@ export default function InterestForm () {
         }
 
         if (!policy) {
-            alert("Necessita de aceitar os Termos de Proteção de Dados")
+            alert("Necessita de aceitar os Termos de Privacidade")
             return
         }
 
         const mens = {
             email: email.trim(),
             name: name.trim(),
+            consent: policy,
         }
 
         console.log(JSON.stringify(mens))
 
         try {
-            const res = await fetch(`http://${envHostBackend()}/api/submissions`, { //TODO: remover link hardcoded
+            const res = await fetch(`${apiBaseUrl()}/api/submissions`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -64,7 +65,7 @@ export default function InterestForm () {
                     <input type="email" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div>
-                    <label>Concordo com os Termos de Proteção de Dados</label>
+                    <label>Concordo com os Termos de Privacidade</label>
                     <input type="checkbox" checked={policy} onChange={(e) => setPolicy(e.target.checked)}/>
                 </div>
                 <div>

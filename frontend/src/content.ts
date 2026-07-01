@@ -35,7 +35,7 @@ export const pageMarkup = `
 <p class="ctag">&lt;CANDIDATURA: FARO_2027 /&gt;</p>
 <h1>ENEI 2027</h1>
 <p class="hero-sub">Encontro Nacional de Estudantes de Informática</p>
-<p class="hero-date">8 – 11 Abril 2027 · Faro, Algarve</p>
+<p class="hero-date">1 – 4 Abril 2027 · Faro, Algarve</p>
 <div class="hero-btns">
 <a class="btn btn-outline" href="#sobre">Saber mais</a>
 <a class="btn btn-primary" href="#interesse">Tenho interesse</a>
@@ -47,7 +47,7 @@ export const pageMarkup = `
 <div class="container stats-inner">
 <div class="stat-col">
 <span class="ctag sm">DATA</span>
-<strong class="sv xl">8 – 11 Abr</strong>
+<strong class="sv xl">1 – 4 Abr</strong>
 <span class="sn">2027 · Quinta a Domingo</span>
 </div>
 <div class="stat-col">
@@ -128,7 +128,7 @@ export const pageMarkup = `
 <div class="container ctr">
 <p class="ctag">&lt;ATIVIDADES /&gt;</p>
 <h2 class="h-xl">Quatro dias para explorar.</h2>
-<p class="body center-t">De 8 a 11 de Abril em Faro. Descobre todas as oportunidades que o ENEI tem para te oferecer, desde sessões técnicas a momentos de networking inesquecíveis.</p>
+<p class="body center-t">De 1 a 4 de Abril em Faro. Descobre todas as oportunidades que o ENEI tem para te oferecer, desde sessões técnicas a momentos de networking inesquecíveis.</p>
 <div class="filter-pills" id="filterPills" role="group">
 <button aria-pressed="true" class="fpill active" data-filter="all" type="button">TODAS</button>
 <button aria-pressed="false" class="fpill" data-filter="tecnico" type="button">TÉCNICAS</button>
@@ -220,52 +220,62 @@ export const pageMarkup = `
 <div class="container ctr">
 <p class="ctag">&lt;AGENDA /&gt;</p>
 <h2 class="h-xl">Quatro dias de descoberta.</h2>
-<p class="body center-t">8 a 11 de Abril de 2027 — Faro, Algarve</p>
+<p class="body center-t">1 – 4 de Abril de 2027 — Faro, Algarve</p>
 <div class="day-tabs" id="dayTabs" role="tablist">
-<button aria-controls="sch-quinta" aria-selected="true" class="dtab active" data-day="quinta" role="tab" type="button"><span class="dtn">QUINTA</span><span class="dtd">8 Abr</span></button>
-<button aria-controls="sch-sexta" aria-selected="false" class="dtab" data-day="sexta" role="tab" type="button"><span class="dtn">SEXTA</span><span class="dtd">9 Abr</span></button>
-<button aria-controls="sch-sabado" aria-selected="false" class="dtab" data-day="sabado" role="tab" type="button"><span class="dtn">SÁBADO</span><span class="dtd">10 Abr</span></button>
-<button aria-controls="sch-domingo" aria-selected="false" class="dtab" data-day="domingo" role="tab" type="button"><span class="dtn">DOMINGO</span><span class="dtd">11 Abr</span></button>
+<button aria-controls="sch-quinta" aria-selected="true" class="dtab active" data-day="quinta" role="tab" type="button"><span class="dtn">QUINTA</span><span class="dtd">1 Abr</span></button>
+<button aria-controls="sch-sexta" aria-selected="false" class="dtab" data-day="sexta" role="tab" type="button"><span class="dtn">SEXTA</span><span class="dtd">2 Abr</span></button>
+<button aria-controls="sch-sabado" aria-selected="false" class="dtab" data-day="sabado" role="tab" type="button"><span class="dtn">SÁBADO</span><span class="dtd">3 Abr</span></button>
+<button aria-controls="sch-domingo" aria-selected="false" class="dtab" data-day="domingo" role="tab" type="button"><span class="dtn">DOMINGO</span><span class="dtd">4 Abr</span></button>
 </div>
 </div>
 </section>
 <div class="agenda-sch dk">
 <div class="container">
 <div class="sch-panel active" id="sch-quinta" role="tabpanel">
-<p class="sch-dl">QUINTA-FEIRA · 8 ABR</p>
+<p class="sch-dl">QUINTA-FEIRA · 1 ABR</p>
 <div class="sch-list">
-<div class="sr"><span class="st">09:00</span><span class="si">Cerimónia de Abertura</span><span class="sb">ABERTURA</span></div>
-<div class="sr"><span class="st">10:30</span><span class="si">Keynote Principal: O Futuro da Computação Quântica</span><span class="sb">KEYNOTE</span></div>
-<div class="sr"><span class="st">14:00</span><span class="si">Workshops Paralelos — Sessão I</span><span class="sb">WORKSHOP</span></div>
-<div class="sr"><span class="st">16:30</span><span class="si">Networking &amp; Stands de Empresas</span><span class="sb">EMPRESAS</span></div>
-<div class="sr"><span class="st">21:00</span><span class="si">Evento de Boas-Vindas @ Baixa de Faro</span><span class="sb">SOCIAL</span></div>
+<div class="sr"><span class="st">14:00</span><span class="si">Check-ins</span><span class="sb">CHECK-IN</span></div>
+<div class="sr"><span class="st">18:00</span><span class="si">Sessão de Boas Vindas</span><span class="sb">BOAS-VINDAS</span></div>
+<div class="sr"><span class="st">20:00</span><span class="si">Jantar/Arraial Académico</span><span class="sb">JANTAR</span></div>
 </div>
 </div>
 <div class="sch-panel" id="sch-sexta" role="tabpanel">
-<p class="sch-dl">SEXTA-FEIRA · 9 ABR</p>
+<p class="sch-dl">SEXTA-FEIRA · 2 ABR</p>
 <div class="sch-list">
-<div class="sr"><span class="st">09:30</span><span class="si">Passeio Matinal por Faro</span><span class="sb">SOCIAL</span></div>
-<div class="sr"><span class="st">11:00</span><span class="si">Palestras — Sessão I</span><span class="sb">PALESTRAS</span></div>
-<div class="sr"><span class="st">14:30</span><span class="si">Workshops Paralelos — Sessão II</span><span class="sb">WORKSHOP</span></div>
-<div class="sr"><span class="st">17:00</span><span class="si">Tertúlias Académicas</span><span class="sb">NETWORKING</span></div>
-<div class="sr"><span class="st">20:30</span><span class="si">CTFs — Início das Competições</span><span class="sb">COMPETIÇÃO</span></div>
+<div class="sr"><span class="st">10:00</span><span class="si">Palestra + Workshops #1, #2 e #3</span><span class="sb">PALESTRA / WORKSHOP</span></div>
+<div class="sr"><span class="st">11:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">12:00</span><span class="si">Almoço</span><span class="sb">REFEIÇÃO</span></div>
+<div class="sr"><span class="st">14:00</span><span class="si">Palestra + Workshops #4, #5 e #6</span><span class="sb">PALESTRA / WORKSHOP</span></div>
+<div class="sr"><span class="st">15:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">16:30</span><span class="si">Coffee Break</span><span class="sb">NETWORKING</span></div>
+<div class="sr"><span class="st">17:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">18:00</span><span class="si">Tertúlia</span><span class="sb">TERTÚLIA</span></div>
+<div class="sr"><span class="st">20:00</span><span class="si">Jantar</span><span class="sb">REFEIÇÃO</span></div>
+<div class="sr"><span class="st">22:00</span><span class="si">Atividades Noturnas</span><span class="sb">NOITE</span></div>
 </div>
 </div>
 <div class="sch-panel" id="sch-sabado" role="tabpanel">
-<p class="sch-dl">SÁBADO · 10 ABR</p>
+<p class="sch-dl">SÁBADO · 3 ABR</p>
 <div class="sch-list">
-<div class="sr"><span class="st">10:00</span><span class="si">Palestras — Sessão II</span><span class="sb">PALESTRAS</span></div>
-<div class="sr"><span class="st">13:00</span><span class="si">Feira de Empresas</span><span class="sb">EMPRESAS</span></div>
-<div class="sr"><span class="st">15:30</span><span class="si">Tertúlia Digital</span><span class="sb">SOCIAL</span></div>
-<div class="sr"><span class="st">19:00</span><span class="si">Jantar de Gala</span><span class="sb">SOCIAL</span></div>
+<div class="sr"><span class="st">10:00</span><span class="si">Palestra + Workshops #10, #11 e #12</span><span class="sb">PALESTRA / WORKSHOP</span></div>
+<div class="sr"><span class="st">11:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">12:00</span><span class="si">Almoço</span><span class="sb">REFEIÇÃO</span></div>
+<div class="sr"><span class="st">14:00</span><span class="si">Palestra + Workshops #13, #14 e #15</span><span class="sb">PALESTRA / WORKSHOP</span></div>
+<div class="sr"><span class="st">15:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">16:30</span><span class="si">Coffee Break</span><span class="sb">NETWORKING</span></div>
+<div class="sr"><span class="st">17:00</span><span class="si">Palestra</span><span class="sb">PALESTRA</span></div>
+<div class="sr"><span class="st">18:00</span><span class="si">Tertúlia</span><span class="sb">TERTÚLIA</span></div>
+<div class="sr"><span class="st">20:00</span><span class="si">Jantar</span><span class="sb">REFEIÇÃO</span></div>
+<div class="sr"><span class="st">22:00</span><span class="si">Atividades Noturnas</span><span class="sb">NOITE</span></div>
 </div>
 </div>
 <div class="sch-panel" id="sch-domingo" role="tabpanel">
-<p class="sch-dl">DOMINGO · 11 ABR</p>
+<p class="sch-dl">DOMINGO · 4 ABR</p>
 <div class="sch-list">
-<div class="sr"><span class="st">10:00</span><span class="si">Entrosamento Final</span><span class="sb">SOCIAL</span></div>
-<div class="sr"><span class="st">12:00</span><span class="si">CTFs — Resultados &amp; Prémios</span><span class="sb">COMPETIÇÃO</span></div>
-<div class="sr"><span class="st">14:00</span><span class="si">Cerimónia de Encerramento</span><span class="sb">ENCERRAMENTO</span></div>
+<div class="sr"><span class="st">10:00</span><span class="si">Nascer do Sol na Praia</span><span class="sb">SOCIAL</span></div>
+<div class="sr"><span class="st">12:00</span><span class="si">Almoço</span><span class="sb">REFEIÇÃO</span></div>
+<div class="sr"><span class="st">14:00</span><span class="si">Tertúlia</span><span class="sb">TERTÚLIA</span></div>
+<div class="sr"><span class="st">16:00</span><span class="si">Sessão de Encerramento</span><span class="sb">ENCERRAMENTO</span></div>
 </div>
 </div>
 </div>
@@ -274,19 +284,19 @@ export const pageMarkup = `
 <div class="container">
 <p class="ctag">&lt;PROGRAMA /&gt;</p>
 <h2 class="h-xl">Plano de Execução</h2>
-<p class="body">Atividades planeadas para 4 dias de imersão tecnológica em Faro.</p>
+<p class="body">4 dias de imersão tecnológica em Faro · 10:00 às 22:00</p>
 <div class="tw">
 <table class="pt">
 <thead><tr><th>ATIVIDADE</th><th>DESCRIÇÃO</th><th>PÚBLICO ALVO</th></tr></thead>
 <tbody>
-<tr><td><span class="tn">Feira de Empresas</span></td><td>Stands de empresas, networking direto com recrutadores e profissionais da área.</td><td><span class="pp">Todos os participantes</span></td></tr>
-<tr><td><span class="tn">Workshops</span></td><td>Sessões técnicas intensivas com grupos reduzidos, orientadas por profissionais.</td><td><span class="pp">Inscrição prévia</span></td></tr>
-<tr><td><span class="tn">Palestras</span></td><td>Apresentações no auditório principal por empresas, docentes e convidados.</td><td><span class="pp">Geral</span></td></tr>
-<tr><td><span class="tn">Tertúlias Académicas</span></td><td>Conversas informais com professores, investigadores e delegados universitários.</td><td><span class="pp">Estudantes e delegados</span></td></tr>
-<tr><td><span class="tn">Tertúlia Digital</span></td><td>Debate e partilha com criadores de conteúdo e figuras ligadas ao digital.</td><td><span class="pp">Entusiastas da tecnologia</span></td></tr>
-<tr><td><span class="tn">Passeio Matinal</span></td><td>Atividade de convívio ao ar livre para explorar a cidade de Faro e a região.</td><td><span class="pp">Todos os participantes</span></td></tr>
-<tr><td><span class="tn">CTFs</span></td><td>Competições Capture The Flag individuais e por equipas, com prémios.</td><td><span class="pp">Security enthusiasts</span></td></tr>
-<tr><td><span class="tn">Entrosamento</span></td><td>Dinâmicas de team building e integração entre participantes de todo o país.</td><td><span class="pp">Todos os participantes</span></td></tr>
+<tr><td><span class="tn">Feira de Empresas</span></td><td>Feira de emprego com foco em recrutamento direto e contacto com empresas.</td><td><span class="pp">Empresas &amp; Todos os participantes</span></td></tr>
+<tr><td><span class="tn">Workshops</span></td><td>Sessões práticas de 10 a 15 pessoas com profissionais da área.</td><td><span class="pp">Estudantes</span></td></tr>
+<tr><td><span class="tn">Palestras</span></td><td>Apresentações por profissionais de empresas nacionais e internacionais.</td><td><span class="pp">Todos os participantes</span></td></tr>
+<tr><td><span class="tn">Tertúlias Académicas</span></td><td>Conversas informais com professores da Universidade do Algarve.</td><td><span class="pp">Estudantes</span></td></tr>
+<tr><td><span class="tn">Tertúlia Digital</span></td><td>Encontro com influencers da área tech.</td><td><span class="pp">Estudantes</span></td></tr>
+<tr><td><span class="tn">Passeio Matinal</span></td><td>Sessão de relaxamento na praia ao nascer do sol.</td><td><span class="pp">Todos os participantes</span></td></tr>
+<tr><td><span class="tn">CTFs</span></td><td>Competições de Capture The Flag ao longo dos dias com prémios.</td><td><span class="pp">Todos os participantes</span></td></tr>
+<tr><td><span class="tn">Atividades de Entrosamento</span></td><td>Atividades de team building e interação entre os participantes.</td><td><span class="pp">Estudantes</span></td></tr>
 </tbody>
 </table>
 </div>
@@ -339,7 +349,7 @@ export const pageMarkup = `
 <h2 class="h-xl">Mostra o teu interesse no ENEI 2027.</h2>
 <p class="body center-t">Ainda não há inscrições abertas. Deixa o teu nome e email para demonstrares interesse e ficares a par de todas as novidades.</p>
 <div class="ibadges">
-<span class="ibadge">Evento a 8–11 Abr 2027</span>
+<span class="ibadge">Evento a 1–4 Abr 2027</span>
 <span class="ibadge acc">Candidatura aberta</span>
 </div>
 </div>
@@ -352,7 +362,7 @@ export const pageMarkup = `
 <form id="wlForm">
 <div class="ff"><label for="wName">Nome</label><input id="wName" placeholder="Ex: João Silva" required="" type="text"/></div>
 <div class="ff"><label for="wEmail">Email</label><input id="wEmail" placeholder="Ex: joao.silva@email.pt" required="" type="email"/></div>
-<label class="terms-consent" for="wConsent"><input id="wConsent" required="" type="checkbox"/><span>Aceito ser contactado por email sobre novidades do ENEI 2027 e concordo com os <a href="#">termos de privacidade</a>.</span></label>
+<label class="terms-consent" for="wConsent"><input id="wConsent" required="" type="checkbox"/><span>Aceito ser contactado por e-mail sobre novidades do ENEI 2027 e concordo com os <a data-open-docs="privacy" href="#privacy-terms">Termos de Privacidade</a>.</span></label>
 <button class="btn btn-primary btn-full" type="submit">Tenho interesse</button>
 </form>
 </div>
@@ -408,15 +418,15 @@ export const pageMarkup = `
 <div class="fi open" data-faqcat="candidatura"><button aria-controls="faq-a-1" aria-expanded="true" class="fq" id="faq-q-1" type="button">Quando abre a candidatura?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="false" aria-labelledby="faq-q-1" class="fa" id="faq-a-1" role="region"><p>A candidatura para organizar o ENEI 2027 está em aberto. Após ser aprovada, as inscrições de participantes serão anunciadas oportunamente. Segue-nos nas redes sociais para ficares a par.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-2" aria-expanded="false" class="fq" id="faq-q-2" type="button">Como posso demonstrar interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-2" class="fa" id="faq-a-2" role="region"><p>Podes deixar o teu nome e email na secção "Tenho Interesse" desta página. Serás notificado assim que as candidaturas oficiais abrirem.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-3" aria-expanded="false" class="fq" id="faq-q-3" type="button">O evento é pago?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-3" class="fa" id="faq-a-3" role="region"><p>Os detalhes sobre o preço de inscrição serão divulgados quando as candidaturas oficiais abrirem. O ENEI tem tradição de manter preços acessíveis para estudantes.</p></div></div>
-<div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-4" aria-expanded="false" class="fq" id="faq-q-4" type="button">Posso retirar o meu interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-4" class="fa" id="faq-a-4" role="region"><p>Sim, podes contactar-nos em geral@enei2027.pt para retirar o teu interesse e seres removido da nossa lista.</p></div></div>
+<div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-4" aria-expanded="false" class="fq" id="faq-q-4" type="button">Posso retirar o meu interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-4" class="fa" id="faq-a-4" role="region"><p>Sim, podes contactar-nos em coenei@aaualg.pt para retirar o teu interesse e seres removido da nossa lista.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-5" aria-expanded="false" class="fq" id="faq-q-5" type="button">Recebo certificado de participação?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-5" class="fa" id="faq-a-5" role="region"><p>Sim, os participantes no ENEI recebem habitualmente certificado de participação. Os detalhes serão confirmados após aprovação da candidatura.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-6" aria-expanded="false" class="fq" id="faq-q-6" type="button">O evento inclui refeições?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-6" class="fa" id="faq-a-6" role="region"><p>Os detalhes sobre refeições serão divulgados com a abertura das candidaturas. O ENEI costuma incluir refeições como parte do pacote de inscrição.</p></div></div>
 <div class="fi" data-faqcat="programa"><button aria-controls="faq-a-7" aria-expanded="false" class="fq" id="faq-q-7" type="button">Quais workshops estarão disponíveis?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-7" class="fa" id="faq-a-7" role="region"><p>O programa de workshops está a ser desenvolvido. Haverá sessões em IA, Cibersegurança, Engenharia de Software e mais. Será divulgado oportunamente.</p></div></div>
 <div class="fi" data-faqcat="alojamento"><button aria-controls="faq-a-8" aria-expanded="false" class="fq" id="faq-q-8" type="button">Onde fico alojado durante o evento?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-8" class="fa" id="faq-a-8" role="region"><p>A Escola Secundária Tomás Cabreira está confirmada para alojamento dos participantes durante os 4 dias do evento.</p></div></div>
 <div class="fi" data-faqcat="transporte"><button aria-controls="faq-a-9" aria-expanded="false" class="fq" id="faq-q-9" type="button">Como chego a Faro?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-9" class="fa" id="faq-a-9" role="region"><p>Faro tem aeroporto internacional e está bem servida de comboios e autocarros. Mais informações serão fornecidas com a abertura das candidaturas.</p></div></div>
-<div class="fi" data-faqcat="parcerias"><button aria-controls="faq-a-10" aria-expanded="false" class="fq" id="faq-q-10" type="button">Como posso ser parceiro do ENEI 2027?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-10" class="fa" id="faq-a-10" role="region"><p>Para parcerias e patrocínios, contacta-nos em geral@enei2027.pt. Temos pacotes para empresas de todos os tamanhos.</p></div></div>
+<div class="fi" data-faqcat="parcerias"><button aria-controls="faq-a-10" aria-expanded="false" class="fq" id="faq-q-10" type="button">Como posso ser parceiro do ENEI 2027?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-10" class="fa" id="faq-a-10" role="region"><p>Para parcerias e patrocínios, contacta-nos em coenei@aaualg.pt. Temos pacotes para empresas de todos os tamanhos.</p></div></div>
 <div class="fi" data-faqcat="eventos"><button aria-controls="faq-a-11" aria-expanded="false" class="fq" id="faq-q-11" type="button">Que eventos sociais existem?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-11" class="fa" id="faq-a-11" role="region"><p>O ENEI inclui eventos de integração, passeio matinal por Faro, tertúlia digital e um evento de boas-vindas na Baixa de Faro.</p></div></div>
-<div class="fi" data-faqcat="documentos"><button aria-controls="faq-a-12" aria-expanded="false" class="fq" id="faq-q-12" type="button">Onde encontro documentos e informações oficiais?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-12" class="fa" id="faq-a-12" role="region"><p>Os documentos oficiais, regulamentos e informações detalhadas serão disponibilizados nesta página ou enviados aos participantes quando as inscrições abrirem.</p></div></div>
+<div class="fi" data-faqcat="documentos" id="privacy-terms"><button aria-controls="faq-a-13" aria-expanded="false" class="fq" id="faq-q-13" type="button">Termos de Privacidade<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-13" class="fa" id="faq-a-13" role="region"><p>Estes Termos de Privacidade explicam, de forma clara, como os dados submetidos no formulário de interesse do ENEI 2027 são recolhidos, utilizados, conservados e protegidos pela organização da candidatura.</p><p>Ao preencheres o formulário e assinalares a caixa de consentimento, declaras que leste estes termos e autorizas o contacto por e-mail para comunicações diretamente relacionadas com o ENEI 2027.</p><ul class="privacy-list"><li><strong>Responsável pelo tratamento:</strong> A organização da candidatura ENEI 2027, associada à comunidade académica da Universidade do Algarve.</li><li><strong>Dados recolhidos:</strong> Nome, endereço de e-mail, data e hora da submissão, confirmação de consentimento e informação técnica mínima necessária ao funcionamento seguro do formulário.</li><li><strong>Finalidade da recolha:</strong> Registar manifestações de interesse, comunicar a abertura de candidaturas ou inscrições, enviar informações sobre o programa, alojamento, transporte, parcerias, documentos e novidades relevantes do evento.</li><li><strong>Base de tratamento:</strong> O tratamento dos dados é feito com base no consentimento dado voluntariamente através da caixa de seleção existente no formulário.</li><li><strong>Caráter facultativo:</strong> A submissão do formulário é opcional. Se não quiseres partilhar os teus dados, podes continuar a consultar a informação disponível no website.</li><li><strong>Conservação dos dados:</strong> Os dados serão mantidos apenas durante o período necessário à organização, comunicação e acompanhamento do ENEI 2027, podendo ser eliminados quando deixarem de ser necessários.</li><li><strong>Partilha de dados:</strong> Os dados não serão vendidos, cedidos ou utilizados para fins comerciais externos. Só poderão ser acedidos por elementos autorizados da organização e apenas quando necessário para a gestão do evento.</li><li><strong>Segurança:</strong> Serão aplicadas medidas técnicas e organizativas adequadas para reduzir riscos de acesso indevido, alteração, perda ou utilização não autorizada dos dados.</li><li><strong>Comunicações por e-mail:</strong> Os contactos enviados terão relação direta com o ENEI 2027, como atualizações do evento, abertura de inscrições, informação logística ou documentos importantes.</li><li><strong>Retirada de consentimento:</strong> Podes retirar o teu consentimento a qualquer momento, pedindo a remoção do teu contacto da lista de interessados.</li><li><strong>Direitos do titular:</strong> Podes solicitar o acesso, a correção, a atualização, a limitação ou a eliminação dos teus dados pessoais.</li><li><strong>Atualizações destes termos:</strong> Estes termos podem ser atualizados se houver alterações relevantes no funcionamento do website, do formulário ou da organização do evento.</li></ul><p>Para questões relacionadas com privacidade, remoção de dados ou atualização do teu contacto, envia um e-mail para <a href="mailto:coenei@aaualg.pt">coenei@aaualg.pt</a>.</p></div></div><div class="fi" data-faqcat="documentos"><button aria-controls="faq-a-12" aria-expanded="false" class="fq" id="faq-q-12" type="button">Onde encontro documentos e informações oficiais?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-12" class="fa" id="faq-a-12" role="region"><p>Os documentos oficiais, regulamentos e informações detalhadas serão disponibilizados nesta página ou enviados aos participantes quando as inscrições abrirem.</p></div></div>
 </div>
 </div>
 </div>
@@ -427,14 +437,12 @@ export const pageMarkup = `
 <h3>Ainda tens dúvidas?</h3>
 <p class="body">A nossa equipa está disponível para responder a todas as tuas questões.</p>
 <div class="ainda-btns">
-<a class="btn btn-outline" href="mailto:geral@enei2027.pt">Enviar email</a>
-<a class="btn btn-primary" href="https://instagram.com/enei2027" rel="noopener" target="_blank">Instagram</a>
+<a class="btn btn-primary" href="mailto:coenei@aaualg.pt">Enviar email</a>
 </div>
 </div>
 <div class="ainda-r">
 <div class="cbox">
-<div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M3 6l7 5 7-5M3 6h14v10H3z"></path></svg><span>geral@enei2027.pt</span></div>
-<div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><rect height="14" rx="4" width="14" x="3" y="3"></rect><circle cx="10" cy="10" r="3"></circle><circle cx="14.5" cy="5.5" fill="#00AAFF" r=".8"></circle></svg><span>@enei2027</span></div>
+<div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M3 6l7 5 7-5M3 6h14v10H3z"></path></svg><span>coenei@aaualg.pt</span></div>
 <div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 2a6 6 0 0 0-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 0 0-6-6z"></path><circle cx="10" cy="8" r="2"></circle></svg><span>Faro, Algarve</span></div>
 </div>
 </div>
@@ -467,15 +475,6 @@ export const pageMarkup = `
 </div>
 </div>
 <div class="fr">
-<div class="fc">
-<h5>REDES SOCIAIS</h5>
-<div class="socials">
-<a aria-label="Instagram" class="sico" href="#"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><rect height="20" rx="5" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r=".75"></circle></svg></a>
-<a aria-label="X" class="sico" href="#"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
-<a aria-label="LinkedIn" class="sico" href="#"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-<a aria-label="Facebook" class="sico" href="#"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-</div>
-</div>
 <div class="fc">
 <h5>ORGANIZAÇÃO</h5>
 <img alt="NEEI" class="org-logo-mark org-logo-mark--footer" src="/assets/neei-logo.webp"/>

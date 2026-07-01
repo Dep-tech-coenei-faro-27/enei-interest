@@ -65,6 +65,7 @@ function App() {
     const anchorHandlers: Array<[HTMLAnchorElement, EventListener]> = []
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((anchor) => {
       const handler = (event: Event) => {
+        if (anchor.dataset.openDocs === 'privacy') return
         const id = anchor.getAttribute('href')
         if (!id || id === '#') return
         const target = document.querySelector<HTMLElement>(id)
@@ -154,6 +155,28 @@ function App() {
       const titleEl = document.getElementById('faqCatTitle')
       if (titleEl && pill) titleEl.textContent = pill.textContent.trim()
     }
+
+    const openFaqItemById = (id: string) => {
+      const item = document.getElementById(id)
+      if (!item) return
+      document.querySelectorAll<HTMLElement>('.fi.open').forEach((openItem) => setFaqItemOpen(openItem, false))
+      setFaqItemOpen(item, true)
+    }
+
+    const privacyLinks = [...document.querySelectorAll<HTMLAnchorElement>('[data-open-docs="privacy"]')]
+    const onPrivacyLinkClick = (event: Event) => {
+      event.preventDefault()
+      closeMenu()
+      setFaqCat('documentos')
+      openFaqItemById('privacy-terms')
+      window.setTimeout(() => {
+        const target = document.getElementById('privacy-terms')
+        if (!target) return
+        const top = target.getBoundingClientRect().top + window.scrollY - getNavH() - 120
+        window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' })
+      }, 30)
+    }
+    privacyLinks.forEach((link) => link.addEventListener('click', onPrivacyLinkClick))
 
     const faqPills = document.getElementById('faqPills')
     const onFaqPillsClick = (event: Event) => {
@@ -248,6 +271,7 @@ function App() {
       window.removeEventListener('scroll', onScroll)
       hamburger?.removeEventListener('click', onHamburgerClick)
       mobileLinks.forEach((el) => el.removeEventListener('click', closeMenu))
+      privacyLinks.forEach((link) => link.removeEventListener('click', onPrivacyLinkClick))
       anchorHandlers.forEach(([anchor, handler]) => anchor.removeEventListener('click', handler))
       sectionObserver?.disconnect()
       filterPills?.removeEventListener('click', onFilterClick)

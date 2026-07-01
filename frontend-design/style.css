@@ -257,10 +257,6 @@ h4{font-size:17px;margin-bottom:8px;font-weight:700}
 .fc ul a{font-size:13px;color:rgba(255,255,255,.5);transition:color .2s}
 .fc ul a:hover{color:#fff}
 .fr{display:flex;flex-direction:column;gap:32px}
-.socials{display:flex;gap:8px;margin-top:4px}
-.sico{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px;color:rgba(255,255,255,.55);transition:all .2s}
-.sico:hover{background:rgba(255,255,255,.12);color:#fff}
-.sico svg{width:16px;height:16px}
 .neei{font-size:22px;font-weight:900;color:#8899AA;font-style:normal;display:block;margin-top:8px}
 .neei em{color:#00AAFF;font-style:normal}
 .fbot{border-top:1px solid rgba(255,255,255,.07);padding:24px 0}
@@ -540,7 +536,6 @@ h2.h-xl{font-size:clamp(42px,4.9vw,72px)}
 
 .footer{background:#03070D;border-top:1px solid rgba(255,255,255,.06)}
 .fbot{background:#03070D}
-.sico{background:rgba(255,255,255,.055)}
 
 @media(max-width:1280px){
   .container{padding-inline:clamp(32px,5vw,64px)}
@@ -1005,3 +1000,8 @@ html,body{max-width:100%;overflow-x:hidden}
 #sobre .about-photo-2{background-image:url('assets/about-workshop.webp')}
 #sobre .about-photo-3{background-image:url('assets/about-talks.webp')}
 #sobre .about-photo-4{background-image:url('assets/about-night.webp')}
+.fi.open .fa{max-height:1200px}
+.privacy-list{display:grid;gap:8px;margin:0 0 18px 0;padding:0 0 0 18px;color:#8899AA;font-size:15px;line-height:1.65}
+.privacy-list strong{color:#D7E3F4;font-weight:700}
+.fa a{color:#00AAFF;text-decoration:underline;text-underline-offset:3px}
+.privacy-list li{margin-bottom:2px}
