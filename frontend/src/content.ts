@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-
-<html lang="pt-PT">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1.0" name="viewport"/><meta content="ENEI 2027 — Encontro Nacional de Estudantes de Informática em Faro, Algarve." name="description"/><meta content="#060D1A" name="theme-color"/><link as="image" href="assets/hero-faro.webp" rel="preload" type="image/webp"/>
-<title>ENEI 2027 — Encontro Nacional de Estudantes de Informática</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@400;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-</head>
-<body>
+export const pageMarkup = `
 <header class="navbar" id="navbar">
 <div class="container nav-inner">
 <a aria-label="ENEI 2027" class="logo" href="#">
-<img alt="" aria-hidden="true" class="logo-mark" src="assets/ENEI-logo.svg"/>
+<img alt="" aria-hidden="true" class="logo-mark" src="/assets/ENEI-logo.svg"/>
 <span>ENEI</span>
 </a>
 <nav class="nav-links" id="navLinks">
@@ -342,7 +330,7 @@
 <p class="tps">Placeholder para a foto de grupo da organização.</p>
 </div>
 <p class="team-bio">A candidatura é liderada por David Gonçalves, em colaboração com o NEEI, NEEC, LESTI, BioEng e outras estruturas da Universidade do Algarve. Uma equipa multidisciplinar com visão, organização e capacidade de execução para receber o ENEI 2027 em Faro.</p>
-<div class="neei-row"><img alt="NEEI" class="org-logo-mark org-logo-mark--team" src="assets/neei-logo.webp"/></div>
+<div class="neei-row"><img alt="NEEI" class="org-logo-mark org-logo-mark--team" src="/assets/neei-logo.webp"/></div>
 </div>
 </section>
 <section class="section int-hero" id="interesse">
@@ -420,13 +408,13 @@
 <div class="fi open" data-faqcat="candidatura"><button aria-controls="faq-a-1" aria-expanded="true" class="fq" id="faq-q-1" type="button">Quando abre a candidatura?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="false" aria-labelledby="faq-q-1" class="fa" id="faq-a-1" role="region"><p>A candidatura para organizar o ENEI 2027 está em aberto. Após ser aprovada, as inscrições de participantes serão anunciadas oportunamente. Segue-nos nas redes sociais para ficares a par.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-2" aria-expanded="false" class="fq" id="faq-q-2" type="button">Como posso demonstrar interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-2" class="fa" id="faq-a-2" role="region"><p>Podes deixar o teu nome e email na secção "Tenho Interesse" desta página. Serás notificado assim que as candidaturas oficiais abrirem.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-3" aria-expanded="false" class="fq" id="faq-q-3" type="button">O evento é pago?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-3" class="fa" id="faq-a-3" role="region"><p>Os detalhes sobre o preço de inscrição serão divulgados quando as candidaturas oficiais abrirem. O ENEI tem tradição de manter preços acessíveis para estudantes.</p></div></div>
-<div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-4" aria-expanded="false" class="fq" id="faq-q-4" type="button">Posso retirar o meu interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-4" class="fa" id="faq-a-4" role="region"><p>Sim, podes contactar-nos em coenei@aaualg.pt para retirar o teu interesse e seres removido da nossa lista.</p></div></div>
+<div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-4" aria-expanded="false" class="fq" id="faq-q-4" type="button">Posso retirar o meu interesse?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-4" class="fa" id="faq-a-4" role="region"><p>Sim, podes contactar-nos em geral@enei2027.pt para retirar o teu interesse e seres removido da nossa lista.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-5" aria-expanded="false" class="fq" id="faq-q-5" type="button">Recebo certificado de participação?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-5" class="fa" id="faq-a-5" role="region"><p>Sim, os participantes no ENEI recebem habitualmente certificado de participação. Os detalhes serão confirmados após aprovação da candidatura.</p></div></div>
 <div class="fi" data-faqcat="candidatura"><button aria-controls="faq-a-6" aria-expanded="false" class="fq" id="faq-q-6" type="button">O evento inclui refeições?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-6" class="fa" id="faq-a-6" role="region"><p>Os detalhes sobre refeições serão divulgados com a abertura das candidaturas. O ENEI costuma incluir refeições como parte do pacote de inscrição.</p></div></div>
 <div class="fi" data-faqcat="programa"><button aria-controls="faq-a-7" aria-expanded="false" class="fq" id="faq-q-7" type="button">Quais workshops estarão disponíveis?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-7" class="fa" id="faq-a-7" role="region"><p>O programa de workshops está a ser desenvolvido. Haverá sessões em IA, Cibersegurança, Engenharia de Software e mais. Será divulgado oportunamente.</p></div></div>
 <div class="fi" data-faqcat="alojamento"><button aria-controls="faq-a-8" aria-expanded="false" class="fq" id="faq-q-8" type="button">Onde fico alojado durante o evento?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-8" class="fa" id="faq-a-8" role="region"><p>A Escola Secundária Tomás Cabreira está confirmada para alojamento dos participantes durante os 4 dias do evento.</p></div></div>
 <div class="fi" data-faqcat="transporte"><button aria-controls="faq-a-9" aria-expanded="false" class="fq" id="faq-q-9" type="button">Como chego a Faro?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-9" class="fa" id="faq-a-9" role="region"><p>Faro tem aeroporto internacional e está bem servida de comboios e autocarros. Mais informações serão fornecidas com a abertura das candidaturas.</p></div></div>
-<div class="fi" data-faqcat="parcerias"><button aria-controls="faq-a-10" aria-expanded="false" class="fq" id="faq-q-10" type="button">Como posso ser parceiro do ENEI 2027?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-10" class="fa" id="faq-a-10" role="region"><p>Para parcerias e patrocínios, contacta-nos em coenei@aaualg.pt. Temos pacotes para empresas de todos os tamanhos.</p></div></div>
+<div class="fi" data-faqcat="parcerias"><button aria-controls="faq-a-10" aria-expanded="false" class="fq" id="faq-q-10" type="button">Como posso ser parceiro do ENEI 2027?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-10" class="fa" id="faq-a-10" role="region"><p>Para parcerias e patrocínios, contacta-nos em geral@enei2027.pt. Temos pacotes para empresas de todos os tamanhos.</p></div></div>
 <div class="fi" data-faqcat="eventos"><button aria-controls="faq-a-11" aria-expanded="false" class="fq" id="faq-q-11" type="button">Que eventos sociais existem?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-11" class="fa" id="faq-a-11" role="region"><p>O ENEI inclui eventos de integração, passeio matinal por Faro, tertúlia digital e um evento de boas-vindas na Baixa de Faro.</p></div></div>
 <div class="fi" data-faqcat="documentos"><button aria-controls="faq-a-12" aria-expanded="false" class="fq" id="faq-q-12" type="button">Onde encontro documentos e informações oficiais?<svg class="fch" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 20 20"><path d="M5 8l5 5 5-5"></path></svg></button><div aria-hidden="true" aria-labelledby="faq-q-12" class="fa" id="faq-a-12" role="region"><p>Os documentos oficiais, regulamentos e informações detalhadas serão disponibilizados nesta página ou enviados aos participantes quando as inscrições abrirem.</p></div></div>
 </div>
@@ -439,13 +427,13 @@
 <h3>Ainda tens dúvidas?</h3>
 <p class="body">A nossa equipa está disponível para responder a todas as tuas questões.</p>
 <div class="ainda-btns">
-<a class="btn btn-outline" href="mailto:coenei@aaualg.pt">Enviar email</a>
+<a class="btn btn-outline" href="mailto:geral@enei2027.pt">Enviar email</a>
 <a class="btn btn-primary" href="https://instagram.com/enei2027" rel="noopener" target="_blank">Instagram</a>
 </div>
 </div>
 <div class="ainda-r">
 <div class="cbox">
-<div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M3 6l7 5 7-5M3 6h14v10H3z"></path></svg><span>coenei@aaualg.pt</span></div>
+<div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M3 6l7 5 7-5M3 6h14v10H3z"></path></svg><span>geral@enei2027.pt</span></div>
 <div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><rect height="14" rx="4" width="14" x="3" y="3"></rect><circle cx="10" cy="10" r="3"></circle><circle cx="14.5" cy="5.5" fill="#00AAFF" r=".8"></circle></svg><span>@enei2027</span></div>
 <div class="crow"><svg fill="none" stroke="#00AAFF" stroke-linecap="round" stroke-width="1.5" viewbox="0 0 20 20"><path d="M10 2a6 6 0 0 0-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 0 0-6-6z"></path><circle cx="10" cy="8" r="2"></circle></svg><span>Faro, Algarve</span></div>
 </div>
@@ -457,7 +445,7 @@
 <div class="container footer-g">
 <div class="fb">
 <div class="fl">
-<img alt="" aria-hidden="true" class="footer-logo-mark" src="assets/ENEI-logo.svg"/>
+<img alt="" aria-hidden="true" class="footer-logo-mark" src="/assets/ENEI-logo.svg"/>
 <span>ENEI</span>
 </div>
 <p>Encontro Nacional de Estudantes de Informática 2027</p>
@@ -490,7 +478,7 @@
 </div>
 <div class="fc">
 <h5>ORGANIZAÇÃO</h5>
-<img alt="NEEI" class="org-logo-mark org-logo-mark--footer" src="assets/neei-logo.webp"/>
+<img alt="NEEI" class="org-logo-mark org-logo-mark--footer" src="/assets/neei-logo.webp"/>
 </div>
 </div>
 </div>
@@ -499,5 +487,4 @@
 </div>
 </footer>
 <script src="script.js"></script>
-</body>
-</html>
+`;

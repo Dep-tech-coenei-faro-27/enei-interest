@@ -989,3 +989,19 @@ html,body{max-width:100%;overflow-x:hidden}
     min-width:0!important;
   }
 }
+
+#sobre .photo-grid{gap:clamp(18px,2.2vw,30px)!important;align-items:stretch}
+#sobre .ph{min-width:0;min-height:0}
+@media(max-width:1024px){#sobre .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(170px,1fr))!important;gap:22px!important}}
+@media(max-width:768px){#sobre .photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:minmax(150px,1fr)!important;grid-template-rows:none!important;gap:18px!important}.faq-pills{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:10px!important;max-width:560px!important;margin-inline:auto!important;overflow:visible!important;padding-bottom:0!important}.faq-pills .fp{flex:0 1 calc(33.333% - 10px)!important;min-width:132px!important;max-width:180px!important;width:auto!important;justify-content:center!important}.faq-side{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:14px 22px!important}.fs{padding:0!important;border-left:0!important;border-bottom:0!important;background:none!important;border-radius:0!important;color:#8899AA!important;font-size:14px!important}.fs.active{border-left:0!important;border-bottom:0!important;color:#00AAFF!important;background:none!important}}
+@media(max-width:560px){.faq-pills .fp{flex-basis:calc(50% - 8px)!important;max-width:190px!important}#sobre .photo-grid{grid-template-columns:1fr!important;grid-auto-rows:145px!important;gap:16px!important}}
+@media(max-width:380px){.faq-pills .fp{flex-basis:100%!important;max-width:260px!important}}
+.terms-consent{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:flex-start;margin:4px 0 18px;color:#8899AA;font-size:13px;line-height:1.5}
+.terms-consent input{width:18px;height:18px;margin-top:2px;accent-color:#00AAFF}
+.terms-consent a{color:#00AAFF;text-decoration:underline}
+#sobre .about-photo{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;border:0!important;box-shadow:0 28px 70px rgba(0,0,0,.34),0 12px 28px rgba(0,170,255,.08)!important;overflow:hidden;position:relative}
+#sobre .about-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,13,26,.02),rgba(6,13,26,.16));pointer-events:none}
+#sobre .about-photo-1{background-image:url('assets/about-companies.webp')}
+#sobre .about-photo-2{background-image:url('assets/about-workshop.webp')}
+#sobre .about-photo-3{background-image:url('assets/about-talks.webp')}
+#sobre .about-photo-4{background-image:url('assets/about-night.webp')}
