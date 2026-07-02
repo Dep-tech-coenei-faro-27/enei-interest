@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-
-<html lang="pt-PT">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1.0" name="viewport"/><meta content="ENEI 2027 — Encontro Nacional de Estudantes de Informática em Faro, Algarve." name="description"/><meta content="#060D1A" name="theme-color"/><link as="image" href="assets/hero-faro.webp" rel="preload" type="image/webp"/>
-<title>ENEI 2027 — Encontro Nacional de Estudantes de Informática</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Sora:wght@400;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-</head>
-<body>
+export const pageMarkup = `
 <header class="navbar" id="navbar">
 <div class="container nav-inner">
 <a aria-label="ENEI 2027" class="logo" href="#">
-<img alt="" aria-hidden="true" class="logo-mark" src="assets/ENEI-logo.svg"/>
+<img alt="" aria-hidden="true" class="logo-mark" src="/assets/ENEI-logo.svg"/>
 <span>ENEI</span>
 </a>
 <nav class="nav-links" id="navLinks">
@@ -352,7 +340,7 @@
 <p class="tps">Placeholder para a foto de grupo da organização.</p>
 </div>
 <p class="team-bio">A candidatura é liderada por David Gonçalves, em colaboração com o NEEI, NEEC, LESTI, BioEng e outras estruturas da Universidade do Algarve. Uma equipa multidisciplinar com visão, organização e capacidade de execução para receber o ENEI 2027 em Faro.</p>
-<div class="neei-row"><img alt="NEEI" class="org-logo-mark org-logo-mark--team" src="assets/neei-logo.webp"/></div>
+<div class="neei-row"><img alt="NEEI" class="org-logo-mark org-logo-mark--team" src="/assets/neei-logo.webp"/></div>
 </div>
 </section>
 <section class="section int-hero" id="interesse">
@@ -465,7 +453,7 @@
 <div class="container footer-g">
 <div class="fb">
 <div class="fl">
-<img alt="" aria-hidden="true" class="footer-logo-mark" src="assets/ENEI-logo.svg"/>
+<img alt="" aria-hidden="true" class="footer-logo-mark" src="/assets/ENEI-logo.svg"/>
 <span>ENEI</span>
 </div>
 <p>Encontro Nacional de Estudantes de Informática 2027</p>
@@ -489,7 +477,7 @@
 <div class="fr">
 <div class="fc">
 <h5>ORGANIZAÇÃO</h5>
-<img alt="NEEI" class="org-logo-mark org-logo-mark--footer" src="assets/neei-logo.webp"/>
+<img alt="NEEI" class="org-logo-mark org-logo-mark--footer" src="/assets/neei-logo.webp"/>
 </div>
 </div>
 </div>
@@ -498,5 +486,4 @@
 </div>
 </footer>
 <script src="script.js"></script>
-</body>
-</html>
+`;

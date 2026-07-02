@@ -1,16 +1,29 @@
-# Frontend
+# ENEI Frontend
 
-Criei com vite + react + typescript.
+Frontend React/Vite da página de interesse do ENEI 2027.
 
-Não adicionei Tailwind pq nunca usei, mas se fizerem questão de usar eu aprendo sem problemas.
+## Instalação
 
-Meter o código a funcionar:
+```bash
+npm install
+```
+
+## Desenvolvimento
 
 ```bash
 npm run dev
-``` 
+```
 
-deve começar a rodar em: http://localhost:5173/
+## Configuração da API
 
--> Atualmente apenas é feito um alerta quando o nome não é inserido, mas depois logo se altera para algo mais bonito
+Cria um ficheiro `.env` se quiseres alterar o backend usado pelo formulário:
 
+```text
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+## Build
+
+```bash
+npm run build
+```

@@ -20,3 +20,8 @@ docker-run:
 
 compose:
 	docker compose up --build -d
+migrate:
+	PYTHONPATH=src alembic upgrade head
+
+migration:
+	PYTHONPATH=src alembic revision --autogenerate -m "$(m)"

@@ -43,6 +43,7 @@ function getNavH() {
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', event => {
+    if (anchor.dataset.openDocs === 'privacy') return;
     const id = anchor.getAttribute('href');
     if (!id || id === '#') return;
     const target = document.querySelector(id);
@@ -130,6 +131,27 @@ function setFaqCat(cat) {
   const titleEl = document.getElementById('faqCatTitle');
   if (titleEl && pill) titleEl.textContent = pill.textContent.trim();
 }
+
+function openFaqItemById(id) {
+  const item = document.getElementById(id);
+  if (!item) return;
+  document.querySelectorAll('.fi.open').forEach(openItem => setFaqItemOpen(openItem, false));
+  setFaqItemOpen(item, true);
+}
+
+document.querySelectorAll('[data-open-docs="privacy"]').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    setFaqCat('documentos');
+    openFaqItemById('privacy-terms');
+    setTimeout(() => {
+      const target = document.getElementById('privacy-terms');
+      if (!target) return;
+      const top = target.getBoundingClientRect().top + window.scrollY - getNavH() - 120;
+      window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }, 30);
+  });
+});
 
 document.getElementById('faqPills')?.addEventListener('click', event => {
   const pill = event.target.closest('.fp');
