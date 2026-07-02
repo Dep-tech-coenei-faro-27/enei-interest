@@ -1005,3 +1005,146 @@ html,body{max-width:100%;overflow-x:hidden}
 .privacy-list strong{color:#D7E3F4;font-weight:700}
 .fa a{color:#00AAFF;text-decoration:underline;text-underline-offset:3px}
 .privacy-list li{margin-bottom:2px}
+
+#atividades .bt{color:#E879F9!important;border-color:rgba(232,121,249,.48)!important;background:rgba(232,121,249,.075)!important}
+#atividades .ba{color:#A78BFA!important;border-color:rgba(167,139,250,.48)!important;background:rgba(167,139,250,.075)!important}
+#atividades .bs{color:#22C55E!important;border-color:rgba(34,197,94,.48)!important;background:rgba(34,197,94,.075)!important}
+#atividades .bc{color:#F97316!important;border-color:rgba(249,115,22,.52)!important;background:rgba(249,115,22,.08)!important}
+#atividades .ac:nth-child(1) .ac-ico{background:rgba(232,121,249,.12)!important}
+#atividades .ac:nth-child(1) .ac-ico svg{stroke:#E879F9!important}
+#atividades .ac:nth-child(2) .ac-ico,#atividades .ac:nth-child(3) .ac-ico,#atividades .ac:nth-child(5) .ac-ico{background:rgba(245,158,11,.12)!important}
+#atividades .ac:nth-child(2) .ac-ico svg,#atividades .ac:nth-child(3) .ac-ico svg,#atividades .ac:nth-child(5) .ac-ico svg{stroke:#F59E0B!important}
+#atividades .ac:nth-child(4) .ac-ico{background:rgba(167,139,250,.12)!important}
+#atividades .ac:nth-child(4) .ac-ico svg{stroke:#A78BFA!important}
+#atividades .ac:nth-child(6) .ac-ico,#atividades .ac:nth-child(8) .ac-ico{background:rgba(34,197,94,.12)!important}
+#atividades .ac:nth-child(6) .ac-ico svg,#atividades .ac:nth-child(8) .ac-ico svg{stroke:#22C55E!important}
+#atividades .ac:nth-child(7) .ac-ico{background:rgba(249,115,22,.12)!important}
+#atividades .ac:nth-child(7) .ac-ico svg{stroke:#F97316!important}
+#equipa .dc:nth-child(1) .di{background:rgba(232,121,249,.13)!important}
+#equipa .dc:nth-child(1) .di svg{stroke:#E879F9!important}
+#equipa .dc:nth-child(2) .di{background:rgba(34,197,94,.13)!important}
+#equipa .dc:nth-child(2) .di svg{stroke:#22C55E!important}
+#equipa .dc:nth-child(3) .di{background:rgba(249,115,22,.13)!important}
+#equipa .dc:nth-child(3) .di svg{stroke:#F97316!important}
+#equipa .dc:nth-child(4) .di{background:rgba(250,204,21,.13)!important}
+#equipa .dc:nth-child(4) .di svg{stroke:#FACC15!important}
+#equipa .dc:nth-child(5) .di{background:rgba(167,139,250,.13)!important}
+#equipa .dc:nth-child(5) .di svg{stroke:#A78BFA!important}
+.fi.open .fa{max-height:1200px}
+.privacy-list{display:grid;gap:8px;margin:0 0 18px 0;padding:0 0 0 18px;color:#8899AA;font-size:15px;line-height:1.65}
+.privacy-list strong{color:#D7E3F4;font-weight:700}
+.fa a{color:#00AAFF;text-decoration:underline;text-underline-offset:3px}
+.privacy-list li{margin-bottom:2px}
+
+#atividades .bt{color:#E879F9!important;border-color:rgba(232,121,249,.48)!important;background:rgba(232,121,249,.075)!important}
+#atividades .ba{color:#A78BFA!important;border-color:rgba(167,139,250,.48)!important;background:rgba(167,139,250,.075)!important}
+#atividades .bs{color:#22C55E!important;border-color:rgba(34,197,94,.48)!important;background:rgba(34,197,94,.075)!important}
+#atividades .bc{color:#F97316!important;border-color:rgba(249,115,22,.52)!important;background:rgba(249,115,22,.08)!important}
+#atividades .ac:nth-child(1) .ac-ico{background:rgba(232,121,249,.12)!important}
+#atividades .ac:nth-child(1) .ac-ico svg{stroke:#E879F9!important}
+#atividades .ac:nth-child(2) .ac-ico,#atividades .ac:nth-child(3) .ac-ico,#atividades .ac:nth-child(5) .ac-ico{background:rgba(245,158,11,.12)!important}
+#atividades .ac:nth-child(2) .ac-ico svg,#atividades .ac:nth-child(3) .ac-ico svg,#atividades .ac:nth-child(5) .ac-ico svg{stroke:#F59E0B!important}
+#atividades .ac:nth-child(4) .ac-ico{background:rgba(167,139,250,.12)!important}
+#atividades .ac:nth-child(4) .ac-ico svg{stroke:#A78BFA!important}
+#atividades .ac:nth-child(6) .ac-ico,#atividades .ac:nth-child(8) .ac-ico{background:rgba(34,197,94,.12)!important}
+#atividades .ac:nth-child(6) .ac-ico svg,#atividades .ac:nth-child(8) .ac-ico svg{stroke:#22C55E!important}
+#atividades .ac:nth-child(7) .ac-ico{background:rgba(249,115,22,.12)!important}
+#atividades .ac:nth-child(7) .ac-ico svg{stroke:#F97316!important}
+#equipa .dc:nth-child(1) .di{background:rgba(232,121,249,.13)!important}
+#equipa .dc:nth-child(1) .di svg{stroke:#E879F9!important}
+#equipa .dc:nth-child(2) .di{background:rgba(34,197,94,.13)!important}
+#equipa .dc:nth-child(2) .di svg{stroke:#22C55E!important}
+#equipa .dc:nth-child(3) .di{background:rgba(249,115,22,.13)!important}
+#equipa .dc:nth-child(3) .di svg{stroke:#F97316!important}
+#equipa .dc:nth-child(4) .di{background:rgba(250,204,21,.13)!important}
+#equipa .dc:nth-child(4) .di svg{stroke:#FACC15!important}
+#equipa .dc:nth-child(5) .di{background:rgba(167,139,250,.13)!important}
+#equipa .dc:nth-child(5) .di svg{stroke:#A78BFA!important}
+
+#atividades .btj{color:#F472B6!important;border-color:rgba(244,114,182,.55)!important;background:rgba(244,114,182,.08)!important}
+#atividades .btech{color:#F59E0B!important;border-color:rgba(245,158,11,.55)!important;background:rgba(245,158,11,.08)!important}
+#atividades .bacad{color:#A78BFA!important;border-color:rgba(167,139,250,.55)!important;background:rgba(167,139,250,.08)!important}
+#atividades .bsocial{color:#22C55E!important;border-color:rgba(34,197,94,.55)!important;background:rgba(34,197,94,.08)!important}
+#atividades .bcomp{color:#F97316!important;border-color:rgba(249,115,22,.58)!important;background:rgba(249,115,22,.09)!important}
+
+.sb-checkin{color:#FACC15!important;border-color:rgba(250,204,21,.45)!important;background:rgba(250,204,21,.08)!important}
+.sb-welcome{color:#38BDF8!important;border-color:rgba(56,189,248,.45)!important;background:rgba(56,189,248,.08)!important}
+.sb-dinner,.sb-meal{color:#34D399!important;border-color:rgba(52,211,153,.45)!important;background:rgba(52,211,153,.08)!important}
+.sb-talkworkshop{color:#FB7185!important;border-color:rgba(251,113,133,.46)!important;background:rgba(251,113,133,.085)!important}
+.sb-talk{color:#F87171!important;border-color:rgba(248,113,113,.46)!important;background:rgba(248,113,113,.085)!important}
+.sb-network{color:#FDBA74!important;border-color:rgba(253,186,116,.46)!important;background:rgba(253,186,116,.085)!important}
+.sb-tertulia{color:#F59E0B!important;border-color:rgba(245,158,11,.46)!important;background:rgba(245,158,11,.085)!important}
+.sb-night{color:#C084FC!important;border-color:rgba(192,132,252,.46)!important;background:rgba(192,132,252,.085)!important}
+.sb-social{color:#22C55E!important;border-color:rgba(34,197,94,.46)!important;background:rgba(34,197,94,.085)!important}
+.sb-close{color:#FACC15!important;border-color:rgba(250,204,21,.50)!important;background:rgba(250,204,21,.09)!important}
+
+.pp-empresas{color:#F472B6!important;border-color:rgba(244,114,182,.45)!important;background:rgba(244,114,182,.075)!important}
+.pp-estudantes{color:#A78BFA!important;border-color:rgba(167,139,250,.42)!important;background:rgba(167,139,250,.07)!important}
+.pp-todos{color:#22C55E!important;border-color:rgba(34,197,94,.42)!important;background:rgba(34,197,94,.07)!important}
+.tn-empresas{color:#F472B6;border-bottom-color:#F472B6!important}
+.tn-workshop{color:#F59E0B;border-bottom-color:#F59E0B!important}
+.tn-palestra{color:#FB7185;border-bottom-color:#FB7185!important}
+.tn-academico{color:#A78BFA;border-bottom-color:#A78BFA!important}
+.tn-digital{color:#FACC15;border-bottom-color:#FACC15!important}
+.tn-social{color:#22C55E;border-bottom-color:#22C55E!important}
+.tn-ctf{color:#F97316;border-bottom-color:#F97316!important}
+.tn-entrosamento{color:#34D399;border-bottom-color:#34D399!important}
+
+.pilares-grid .pilar-card:nth-child(1) .p-ico svg{stroke:#F59E0B!important}
+.pilares-grid .pilar-card:nth-child(2) .p-ico svg{stroke:#22C55E!important}
+.pilares-grid .pilar-card:nth-child(3) .p-ico svg{stroke:#A78BFA!important}
+.pilares-grid .pilar-card:nth-child(1){border-top-color:rgba(245,158,11,.75)!important}
+.pilares-grid .pilar-card:nth-child(2){border-top-color:rgba(34,197,94,.75)!important}
+.pilares-grid .pilar-card:nth-child(3){border-top-color:rgba(167,139,250,.75)!important}
+
+#sobre .about-photo::before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:screen}
+#sobre .about-photo-1::before{background:radial-gradient(circle at 18% 20%,rgba(244,114,182,.36),transparent 42%)}
+#sobre .about-photo-2::before{background:radial-gradient(circle at 80% 18%,rgba(245,158,11,.32),transparent 44%)}
+#sobre .about-photo-3::before{background:radial-gradient(circle at 22% 82%,rgba(251,113,133,.30),transparent 44%)}
+#sobre .about-photo-4::before{background:radial-gradient(circle at 78% 76%,rgba(34,197,94,.26),transparent 42%)}
+#sobre .about-photo-1{box-shadow:0 26px 68px rgba(244,114,182,.13),0 18px 44px rgba(0,0,0,.36)!important}
+#sobre .about-photo-2{box-shadow:0 26px 68px rgba(245,158,11,.12),0 18px 44px rgba(0,0,0,.36)!important}
+#sobre .about-photo-3{box-shadow:0 26px 68px rgba(251,113,133,.12),0 18px 44px rgba(0,0,0,.36)!important}
+#sobre .about-photo-4{box-shadow:0 26px 68px rgba(34,197,94,.10),0 18px 44px rgba(0,0,0,.36)!important}
+.faro-main{box-shadow:0 28px 70px rgba(34,197,94,.12),0 18px 44px rgba(0,0,0,.34)!important}
+.faro-sm:nth-child(1){box-shadow:0 18px 42px rgba(167,139,250,.13),0 12px 28px rgba(0,0,0,.34)!important}
+.faro-sm:nth-child(2){box-shadow:0 18px 42px rgba(245,158,11,.13),0 12px 28px rgba(0,0,0,.34)!important}
+.faro-main .faro-label{border-color:rgba(34,197,94,.45)!important;background:rgba(34,197,94,.18)!important;color:#D1FAE5!important}
+
+/* Final color test adjustments */
+.atv-grid .btj{color:#F472B6!important;border-color:rgba(244,114,182,.62)!important;background:rgba(244,114,182,.10)!important}
+.atv-grid .btech{color:#F59E0B!important;border-color:rgba(245,158,11,.62)!important;background:rgba(245,158,11,.10)!important}
+.atv-grid .bacad{color:#A78BFA!important;border-color:rgba(167,139,250,.62)!important;background:rgba(167,139,250,.10)!important}
+.atv-grid .bsocial{color:#22C55E!important;border-color:rgba(34,197,94,.62)!important;background:rgba(34,197,94,.10)!important}
+.atv-grid .bcomp{color:#F97316!important;border-color:rgba(249,115,22,.62)!important;background:rgba(249,115,22,.10)!important}
+.atv-grid .ac:has(.btj) .ac-ico{background:rgba(244,114,182,.13)!important;color:#F472B6!important}
+.atv-grid .ac:has(.btech) .ac-ico{background:rgba(245,158,11,.13)!important;color:#F59E0B!important}
+.atv-grid .ac:has(.bacad) .ac-ico{background:rgba(167,139,250,.13)!important;color:#A78BFA!important}
+.atv-grid .ac:has(.bsocial) .ac-ico{background:rgba(34,197,94,.13)!important;color:#22C55E!important}
+.atv-grid .ac:has(.bcomp) .ac-ico{background:rgba(249,115,22,.13)!important;color:#F97316!important}
+.atv-grid .ac:has(.btj) .ac-ico svg,
+.atv-grid .ac:has(.btech) .ac-ico svg,
+.atv-grid .ac:has(.bacad) .ac-ico svg,
+.atv-grid .ac:has(.bsocial) .ac-ico svg,
+.atv-grid .ac:has(.bcomp) .ac-ico svg{stroke:currentColor!important}
+#programa .tn,#programa .tn-empresas,#programa .tn-workshop,#programa .tn-palestra,#programa .tn-academico,#programa .tn-digital,#programa .tn-social,#programa .tn-ctf,#programa .tn-entrosamento{color:#00AAFF!important;border-bottom-color:#00AAFF!important}
+#programa .pp,#programa .pp-empresas,#programa .pp-estudantes,#programa .pp-todos{color:#8899AA!important;border-color:rgba(255,255,255,.12)!important;background:rgba(255,255,255,.05)!important}
+
+/* Requested adjustment: keep Plano de Execução activity names in the original blue, apply color only to Público Alvo pills, and keep Atividades icons blue. */
+#programa .tn,
+#programa .tn-empresas,
+#programa .tn-workshop,
+#programa .tn-palestra,
+#programa .tn-academico,
+#programa .tn-digital,
+#programa .tn-social,
+#programa .tn-ctf,
+#programa .tn-entrosamento{color:#00AAFF!important;border-bottom-color:#00AAFF!important}
+#programa .pp{border-width:1px!important}
+#programa .pp-empresas{color:#F472B6!important;border-color:rgba(244,114,182,.50)!important;background:rgba(244,114,182,.085)!important}
+#programa .pp-estudantes{color:#A78BFA!important;border-color:rgba(167,139,250,.48)!important;background:rgba(167,139,250,.08)!important}
+#programa .pp-todos{color:#22C55E!important;border-color:rgba(34,197,94,.48)!important;background:rgba(34,197,94,.08)!important}
+
+.section.atv-sect .atv-grid .ac .ac-ico{background:rgba(0,170,255,.10)!important;color:#00AAFF!important}
+.section.atv-sect .atv-grid .ac .ac-ico svg,
+.section.atv-sect .atv-grid .ac .ac-ico svg *{stroke:#00AAFF!important}
