@@ -1,40 +1,125 @@
 # API Contract: Submissions
 
-## Request
+## Health check
 
-*   **Method:** `POST`
-*   **Endpoint:** `/api/submissions`
-*   **Payload:**
+**Method:** `GET`  
+**Endpoint:** `/api/health`
+
+### Success response — 200 OK
+
 ```json
 {
-  "name": "string"
-  "email": "string"
+  "status": "ok"
 }
 ```
 
-## Responses
+## Create submission
 
-### 1. Success (201 Created)
+**Method:** `POST`  
+**Endpoint:** `/api/submissions`
+
+### Payload
+
 ```json
 {
-  "status": "success",
-  "message": "Interest recorded successfully."
+  "name": "string",
+  "email": "user@example.com",
+  "consent": true
 }
 ```
 
-### 2. Client Error (400 Bad Request)
- _Trigger: Missing or empty 'name' field._
+All fields are required. Extra fields are rejected. Email addresses are normalized to lowercase before being stored.
+
+### Success response — 201 Created
+
 ```json
 {
-  "status": "error",
-  "message": "Name and Email required"
+  "id": 1,
+  "name": "string",
+  "email": "user@example.com",
+  "consent": true,
+  "created_at": "2027-01-01T12:00:00+00:00"
 }
 ```
-### 3. Server Error (500 Internal Server Error)
-_Trigger: Database connection failure._
+
+### Duplicate response — 409 Conflict
+
 ```json
 {
-  "status": "error",
-  "message": "Internal server error. Please try again later."
+  "detail": {
+    "message": "This email is already registered.",
+    "code": "duplicate_email"
+  }
 }
+```
+
+### Consent required response — 400 Bad Request
+
+```json
+{
+  "detail": {
+    "message": "Consent is required to register interest.",
+    "code": "consent_required"
+  }
+}
+```
+
+### Rate limit response — 429 Too Many Requests
+
+```json
+{
+  "detail": {
+    "message": "Too many submissions. Please try again later.",
+    "code": "rate_limited"
+  }
+}
+```
+
+### Validation response — 422 Unprocessable Entity
+
+Returned when required fields are missing, email is invalid, or extra fields are submitted.
+
+## Count submissions
+
+**Method:** `GET`  
+**Endpoint:** `/api/submissions/quantity`
+
+### Success response — 200 OK
+
+```json
+{
+  "quantity": 1
+}
+```
+
+## Admin: list submissions
+
+**Method:** `GET`  
+**Endpoint:** `/api/admin/submissions`  
+**Auth:** `Authorization: Bearer <ADMIN_TOKEN>`
+
+### Success response — 200 OK
+
+```json
+[
+  {
+    "id": 1,
+    "name": "string",
+    "email": "user@example.com",
+    "consent": true,
+    "created_at": "2027-01-01T12:00:00+00:00"
+  }
+]
+```
+
+## Admin: export submissions CSV
+
+**Method:** `GET`  
+**Endpoint:** `/api/admin/submissions/export.csv`  
+**Auth:** `Authorization: Bearer <ADMIN_TOKEN>`
+
+Returns a CSV file with:
+
+```text
+id,name,email,consent,created_at
 ```

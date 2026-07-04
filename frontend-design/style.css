@@ -1148,3 +1148,10 @@ html,body{max-width:100%;overflow-x:hidden}
 .section.atv-sect .atv-grid .ac .ac-ico{background:rgba(0,170,255,.10)!important;color:#00AAFF!important}
 .section.atv-sect .atv-grid .ac .ac-ico svg,
 .section.atv-sect .atv-grid .ac .ac-ico svg *{stroke:#00AAFF!important}
+@media (min-width: 769px) and (max-width: 1024px){
+  .dept-grid .dc:last-child:nth-child(odd){
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 18px) / 2);
+  }
+}
