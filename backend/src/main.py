@@ -27,6 +27,12 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 
+@app.middleware("http")
+async def log_origin(request: Request, call_next):
+    origin = request.headers.get("origin")
+    logger.info(f"DEBUG: Incoming request origin: {origin}")
+    return await call_next(request)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins_list,
